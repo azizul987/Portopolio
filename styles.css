@@ -1,76 +1,107 @@
 body {
     margin: 0;
-    height: 100vh; /* Mengatur tinggi body menjadi 100% dari viewport */
-    background-image: url('Dark\ Blue\ Simple\ Dark\ Tech\ and\ Gaming\ Bio-Link\ Website.png'); /* Ganti dengan path gambar Anda */
-    background-size: cover; /* Mengatur gambar agar menutupi seluruh area */
-    background-position: center; /* Memusatkan gambar di tengah */
-    background-repeat: no-repeat; /* Tidak mengulangi gambar */
+    height: 100vh;
+    background-image: url('Dark\ Blue\ Simple\ Dark\ Tech\ and\ Gaming\ Bio-Link\ Website.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     font-family: 'Press Start 2P', cursive;
 }
 
 .container {
     padding: 20px;
-    margin: 0; /* Menghapus margin agar menyatu dengan tepi */
+    margin: 0;
     display: flex;
-    justify-content: space-around; /* Memisahkan item dengan ruang yang sama */
-    align-items: center; /* Memastikan item di tengah secara vertikal */
+    flex-wrap: wrap; /* Tambahkan ini untuk membungkus item */
+    justify-content: space-around;
+    align-items: center;
     font-size: 11px;
-    margin-bottom: 75px; /* Pastikan ini sesuai dengan desain Anda */
+    margin-bottom: 75px;
 }
 
 .container a {
     text-decoration: none;
-    color: white; /* Warna teks */
+    color: white;
     padding: 10px;
+    flex: 1 1 auto; /* Membuat link fleksibel */
+    text-align: center; /* Memusatkan teks */
 }
 
 .container a.Menu1 {
-    background-color: #7e91b9; /* Latar belakang menu 1 */
-    border: 2px solid #000; /* Menambahkan border */
-    border-radius: 7px; /* Sudut border melengkung */
-    transition: background-color 0.3s; /* Animasi perubahan latar belakang */
+    background-color: #7e91b9;
+    border: 2px solid #000;
+    border-radius: 7px;
+    transition: background-color 0.3s;
 }
 
 .container a.Menu1:hover {
-    background-color: #6d82a2; /* Perubahan warna saat hover */
+    background-color: #6d82a2;
 }
 
 .main {
-    font-size: 15px; /* Ukuran font yang lebih besar untuk teks utama */
-    margin-left: 60px;
+    font-size: 15px;
+    margin: 20px; /* Mengurangi margin untuk responsivitas */
     color: #990000;
     text-align: left;
 }
 
 .greeting {
     color: brown;
-    font-size: 15px; /* Ukuran font yang lebih besar untuk sapaan */
+    font-size: 15px;
     margin: 10px;
 }
 
 .intro {
-    color: #ffffff; /* Warna teks putih */
+    color: #ffffff;
     font-size: 25px;
     line-height: 1.3;
-    margin: 0; /* Menghapus margin agar tidak ada jarak */
-    margin-bottom:10px;
+    margin: 0;
+    margin-bottom: 10px;
 }
-.Skill{
+
+.Skill {
     color: #000;
     font-size: 8px;
     padding: 10px;
-    background-color: #7e91b9; /* Latar belakang menu 1 */
-    border: 2px solid #000; /* Menambahkan border */
-    border-radius: 7px; /* Sudut border melengkung */
+    background-color: #7e91b9;
+    border: 2px solid #000;
+    border-radius: 7px;
     width: 200px;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
-.Menu{
+
+.Menu {
     color: rgb(0, 0, 0);
     font-size: 20px;
 }
-.Isi{
+
+.Isi {
     color: rgb(255, 255, 255);
     font-size: 15px;
     font-family: 'Pixelify Sans', sans-serif;
+}
+
+/* Media Queries untuk responsivitas */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Mengubah arah menjadi kolom pada layar kecil */
+        align-items: center; /* Memusatkan item */
+    }
+
+    .container a {
+        margin: 5px 0; /* Jarak antar link */
+        width: 100%; /* Membuat link lebar penuh */
+    }
+
+    .main {
+        margin: 10px; /* Mengurangi margin di layar kecil */
+    }
+
+    .intro {
+        font-size: 20px; /* Mengurangi ukuran font pada layar kecil */
+    }
+
+    .Skill {
+        width: auto; /* Mengatur lebar otomatis pada layar kecil */
+    }
 }
