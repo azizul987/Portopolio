@@ -70,7 +70,6 @@ Menu5T.addEventListener('click', function(event) {
     // Mengubah teks pada elemen Isi dengan baris baru menggunakan <br>
     Isi.innerHTML = `<ul>
                      <li><b>Critical blue</li>
-                     <li><b>Judi Era</li>
                      <li><b>-</li>
                      </ul>`;
 }); 
