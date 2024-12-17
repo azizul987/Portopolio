@@ -5,3 +5,43 @@
     
     font-family: 'Fira Sans',sans-serif;
 }
+body{
+    height: 5000px;
+}
+header{
+    // color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    .container{
+        padding-top: 32px;
+        padding-bottom: 32px;
+        display: flex;
+        justify-content: space-between;
+        max-width: 1600px;
+        margin: 0 auto;
+        padding-left: 128px;
+        padding-right: 128px;
+        h2{
+            color: inherit;
+            text-transform: uppercase;
+            font-size: 32px;
+            font-weight: 900;
+            span{
+                font-weight: 600;
+            }
+        }
+
+        nav{
+            display: grid;
+            grid-gap: 25px;
+            grid-template-columns: repeat(4,auto);
+            a{
+                color: inherit;
+                font-size: 20px;
+                text-decoration: none;
+            }
+        }
+    }
+}
