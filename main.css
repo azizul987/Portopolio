@@ -297,7 +297,7 @@ main .projects .projects-grid {
   }
 }
 main .projects .projects-grid .project {
-  background-image: url("Services.png");
+  background-image: url("Services3Fix.png");
   border-radius: 16px;
 }
 main .projects .projects-grid .project:nth-child(2) {
