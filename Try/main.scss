@@ -8,21 +8,27 @@
 body{
     height: 5000px;
 }
+.container{
+    width: 100%;
+    max-width: 1600px;
+        margin: 0 auto;
+        padding-left: 128px;
+        padding-right: 128px;
+        
+}
 header{
-    // color: white;
+    color: white;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 99;
     .container{
         padding-top: 32px;
         padding-bottom: 32px;
         display: flex;
         justify-content: space-between;
-        max-width: 1600px;
-        margin: 0 auto;
-        padding-left: 128px;
-        padding-right: 128px;
+        
         h2{
             color: inherit;
             text-transform: uppercase;
@@ -42,6 +48,36 @@ header{
                 font-size: 20px;
                 text-decoration: none;
             }
+        }
+    }
+}
+main{
+    section.banner
+    {
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        background-image: url('../Dark\ Blue\ Simple\ Dark\ Tech\ and\ Gaming\ Bio-Link\ Website.png');
+        background-position: top right;
+        background-size: cover;
+
+        &::after{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+            background-color: rgb(53, 50, 56);
+            opacity: 0.5;
+        }
+        
+        .container{
+        position: relative;
+        z-index: 1;
         }
     }
 }
