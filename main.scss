@@ -207,7 +207,7 @@ main {
 		display: flex;
 		align-items: center;
 
-		background-image: url('../Dark\ Blue\ Simple\ Dark\ Tech\ and\ Gaming\ Bio-Link\ Website.png');
+		background-image: url('Dark\ Blue\ Simple\ Dark\ Tech\ and\ Gaming\ Bio-Link\ Website.png');
 		background-position: top right;
 		background-size: cover;
 
@@ -319,10 +319,10 @@ main {
 			}
 
 			.project {
-				background-image: url('../Services.png');
+				background-image: url('Services.png');
                 &:nth-child(2)
                 {
-                    background-image: url('../Services.png');
+                    background-image: url('Services.png');
                 }
 				border-radius: 16px;
 				// overflow: hidden;
