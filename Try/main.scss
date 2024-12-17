@@ -106,11 +106,15 @@ body{
 
 section {
 	h2 {
+        // strong/{
+            font-family: monospace;
+        //}
+        
 		text-align: center;
 		margin-bottom: 32px;
 		text-transform: uppercase;
-
-		color: #e92424;
+        font-family: monospace;
+		color: #1f1f1f;
 		font-size: 36px;
 	}
 }
@@ -187,7 +191,7 @@ header {
 	}
 
 	&.is-scrolling {
-		background-color: #12002F;
+		background-color: #2b2b2b;
 		.container {
 			padding-top: 16px;
 			padding-bottom: 16px;
@@ -216,8 +220,8 @@ main {
 			right: 0;
 			bottom: 0;
 			z-index: 0;
-			background-color: #d1cfd4;
-			opacity: 0.1;
+			background-color: #1d4e8a;
+			opacity: 0.5;
 		}
 
 		.container {

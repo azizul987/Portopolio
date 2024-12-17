@@ -104,10 +104,12 @@ body {
   }
 }
 section h2 {
+  font-family: monospace;
   text-align: center;
   margin-bottom: 32px;
   text-transform: uppercase;
-  color: #e92424;
+  font-family: monospace;
+  color: #1f1f1f;
   font-size: 36px;
 }
 
@@ -177,7 +179,7 @@ header .container nav a {
   text-decoration: none;
 }
 header.is-scrolling {
-  background-color: #12002F;
+  background-color: #2b2b2b;
 }
 header.is-scrolling .container {
   padding-top: 16px;
@@ -203,8 +205,8 @@ main section.banner:after {
   right: 0;
   bottom: 0;
   z-index: 0;
-  background-color: #d1cfd4;
-  opacity: 0.1;
+  background-color: #1d4e8a;
+  opacity: 0.5;
 }
 main section.banner .container {
   position: relative;
